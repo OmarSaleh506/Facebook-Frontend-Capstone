@@ -28,7 +28,8 @@ export function MostRecent(){
         <div className='no_more_post'>
             <div>            <p id ='no_more_post'> No more posts</p></div>
             <div>            <p id='add_more'>Add more friends to see more posts in your Feed.</p></div>
-            <button id='btn_find_friend'>Find friends </button>
+            <Link to={'/friends'}>
+            <button id='btn_find_friend'>Find friends </button></Link>
         </div>
         
         </div>

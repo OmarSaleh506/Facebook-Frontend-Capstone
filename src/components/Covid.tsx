@@ -3,7 +3,7 @@ import { BsCalendar2Plus, BsCalendar2PlusFill } from "react-icons/bs";
 import { IoIosShareAlt } from "react-icons/io";
 import { FiMoreHorizontal } from "react-icons/fi";
 
-import { ILatest_Post, posts } from "../data";
+import { ILatest_Post, posts } from "../data/data";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaShare } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
