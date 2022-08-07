@@ -15,9 +15,11 @@ import CovidPage from './pages/covidpage';
 import { PagesPage } from './pages/pages';
 import MostRecentpage from './pages/mostrecentpage';
 import Profilepage from './pages/profile';
+import {Notfound} from './pages/notfound404';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { persistor, store } from './state';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -40,6 +42,8 @@ root.render(
       <Route path='pages' element={<PagesPage />} />
       <Route path='mostrecent' element={<MostRecentpage/>}/>
       <Route path='profile' element={<Profilepage />} />
+      <Route path='/*' element={<Notfound/>} />
+
      </Routes>
   </BrowserRouter>
   </PersistGate>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CommunityHelp() {
 	return (
@@ -17,7 +18,9 @@ export default function CommunityHelp() {
 					</h4>
 				</div>
 				<div>
+					<Link to={'/'}>
 					<button>Reload Page</button>
+					</Link>
 				</div>
 			</div>
 		</div>
