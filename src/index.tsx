@@ -16,11 +16,17 @@ import { PagesPage } from './pages/pages';
 import MostRecentpage from './pages/mostrecentpage';
 import Profilepage from './pages/profile';
 import {Notfound} from './pages/notfound404';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Provider } from 'react-redux';
+import { persistor, store } from './state';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<HomePage />} />
@@ -40,5 +46,7 @@ root.render(
 
      </Routes>
   </BrowserRouter>
+  </PersistGate>
+  </Provider>
 );
 reportWebVitals();
